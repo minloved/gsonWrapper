@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/toJson"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="toJson"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+
+
+        <TextView
+            android:id="@+id/toBean"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="toBean"
+            android:background="#00FF00"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="center"
+
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/json_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="v1"
+            android:background="#FF0000"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+
+
+        <TextView
+            android:id="@+id/bean_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="v2"
+            android:background="#00FF00"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:gravity="center"
+
+            android:layout_weight="1"/>
+
+
+        <TextView
+            android:id="@+id/exception_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="exception"
+            android:background="#0000FF"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:gravity="center"
+
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
