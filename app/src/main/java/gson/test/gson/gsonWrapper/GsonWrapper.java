@@ -45,7 +45,7 @@ public final class GsonWrapper {
             List<TypeAdapterFactory> gsonFactories = (List<TypeAdapterFactory>) field.get(gson);
 
             if (gsonFactories == null) return true;
-X
+
             gsonFactories = Collections.unmodifiableList(newGsonTypeAdapterFactories(gsonFactories));
 
             field.set(gson,gsonFactories);
