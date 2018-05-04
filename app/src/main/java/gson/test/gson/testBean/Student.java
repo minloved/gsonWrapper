@@ -2,6 +2,8 @@ package gson.test.gson.testBean;
 
 import android.app.Activity;
 
+import com.google.gson.annotations.SerializedName;
+
 import gson.test.gson.gsonWrapper.Optional;
 
 public class Student extends Person{
@@ -13,11 +15,10 @@ public class Student extends Person{
     public Object object;
 
     @Optional
+    @SerializedName(value = "name")
     public String name;
 
-    @Optional
+    @Optional(optional = false)
     public Integer age;
-
-//    public int id;
 
 }

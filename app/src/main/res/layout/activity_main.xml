@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:orientation="horizontal">
 
 
@@ -19,7 +19,7 @@
             android:text="toJson"
             android:background="#FF0000"
             android:textColor="#FFFFFF"
-            android:textSize="25dp"
+            android:textSize="15dp"
             android:gravity="center"
             android:layout_weight="1"/>
 
@@ -32,7 +32,7 @@
             android:text="toBean"
             android:background="#00FF00"
             android:textColor="#000000"
-            android:textSize="25dp"
+            android:textSize="15dp"
             android:gravity="center"
 
             android:layout_weight="1"/>
@@ -53,7 +53,7 @@
             android:text="v1"
             android:background="#FF0000"
             android:textColor="#FFFFFF"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:gravity="center"
             android:layout_weight="1"/>
 
@@ -66,7 +66,7 @@
             android:text="v2"
             android:background="#00FF00"
             android:textColor="#000000"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:gravity="center"
 
             android:layout_weight="1"/>

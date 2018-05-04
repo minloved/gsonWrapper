@@ -12,6 +12,8 @@ import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -43,7 +45,7 @@ public final class GsonWrapper {
             List<TypeAdapterFactory> gsonFactories = (List<TypeAdapterFactory>) field.get(gson);
 
             if (gsonFactories == null) return true;
-
+X
             gsonFactories = Collections.unmodifiableList(newGsonTypeAdapterFactories(gsonFactories));
 
             field.set(gson,gsonFactories);
@@ -119,8 +121,7 @@ public final class GsonWrapper {
         }
         @Override
         public void write(JsonWriter out, T value) throws IOException{
-
-            checkObjOptionalField(value);
+//            checkObjOptionalField(value);
             this.realAdapter.write(out,value);
         }
 
@@ -142,7 +143,7 @@ public final class GsonWrapper {
             for (Field field: declaredFields) {
 
                 optional = field.getAnnotation(Optional.class);
-                if (optional != null)continue;
+                if (optional == null || optional.optional())continue;
 
                 try{
                     field.setAccessible(true);

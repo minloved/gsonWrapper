@@ -85,7 +85,7 @@ public class MainActivity extends Activity {
         Random random = new Random();
         student.id = random.nextInt(1000);
         student.name = "name:" + student.id;
-        student.age = random.nextInt(15);
+//        student.age = random.nextInt(15);
 
 
         Person person = new Person();   
